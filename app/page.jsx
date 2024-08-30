@@ -1,5 +1,12 @@
-const HomePage = () => {
-  return <div className="text-2xl">Home Page</div>;
-};
+import Link from 'next/link'
 
-export default HomePage;
+const HomePage = () => {
+  return (
+    <div>
+      <h1 className='text-3xl'>Welcome</h1>
+      <Link href='/properties'>Go to Properties</Link>
+    </div>
+  )
+}
+
+export default HomePage
